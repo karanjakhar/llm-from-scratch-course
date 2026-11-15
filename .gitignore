@@ -1,0 +1,33 @@
+# data & weights — large, regenerable
+/data/*
+!/data/tokenizers/
+/checkpoints/
+*.bin
+*.pt
+*.safetensors
+*.gguf
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# tooling
+.vscode/
+.idea/
+.DS_Store
+wandb/
+runs/
+*.log
+
+# keep result artifacts
+!results/**/*.json
+!results/**/*.png
+
+# book web build output (uv run book/build_web.py)
+/book/_site/
+course/_build/
